@@ -20,11 +20,12 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private List<GameObject> skinList;   
 
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Animator anim;
     private PlayerData localPlayerData;
     private GameObject localSkin;
     private Camera cam;
+    public AudioSource audioSource;
 
     
 
@@ -40,6 +41,7 @@ public class PlayerController : NetworkBehaviour
         // Cargamos los datos multijugador
         PlayerSetUp(OwnerClientId);
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Este método se ejecuta cuando se instancia en red en todos los clientes.
@@ -143,6 +145,7 @@ public class PlayerController : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && (Mathf.Abs(rb.velocity.y) < 0.2f))
         {           
             rb.AddForce(transform.up * fuerzaSalto);
+            audioSource.Play();
         }
 
         // Actualizamos la animación

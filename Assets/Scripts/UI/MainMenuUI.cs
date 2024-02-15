@@ -29,7 +29,7 @@ public class MainMenuUI : MonoBehaviour
     // Método para Iniciar nueva partida
     public void NewGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameSceneSingle");
     }
 
 

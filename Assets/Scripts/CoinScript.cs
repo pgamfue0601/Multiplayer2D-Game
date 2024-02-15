@@ -28,9 +28,9 @@ public class CoinScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            coinPicked.Play();
+            AudioSource.PlayClipAtPoint(coinPicked.clip, gameObject.transform.position);
             puntuacion.text = (Int32.Parse(puntuacion.text) + 10).ToString();
-            Destroy(gameObject, 0.8f);
+            Destroy(gameObject);
         }  
     }
 }
