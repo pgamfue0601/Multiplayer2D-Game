@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 public class FinishGoal : MonoBehaviour
 {
     [SerializeField] private AudioSource m_AudioSource;
+    private AudioSource win;
     // Start is called before the first frame update
     void Start()
     {
-        m_AudioSource = GetComponent<AudioSource>();
+        win = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class FinishGoal : MonoBehaviour
                 collision.GetComponent<SinglePlayerController>().rb.velocity = Vector3.zero;
                 collision.GetComponent<PlayerController>().rb.AddForce(collision.GetComponent<PlayerController>().gameObject.transform.up * 325, ForceMode2D.Impulse);
             }
-            m_AudioSource.Play();
+            win.Play();
             yield return new WaitForSeconds(9f);
             Debug.Log("Juego finalizado");
             SceneManager.LoadScene("MenuScene");
