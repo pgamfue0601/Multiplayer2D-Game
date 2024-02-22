@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
@@ -343,7 +343,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
@@ -1018,6 +1018,8 @@ GameObject:
   - component: {fileID: 483524926}
   - component: {fileID: 483524925}
   - component: {fileID: 483524924}
+  - component: {fileID: 483524929}
+  - component: {fileID: 483524928}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1054,7 +1056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1108,6 +1110,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &483524928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483524923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1846836864
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &483524929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483524923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566818355327bfd4dbd628e690c4e6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exit: {fileID: 391944885}
 --- !u!1001 &558618900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1410,7 +1445,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
@@ -1808,7 +1843,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -9884,7 +9919,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -10053,7 +10088,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy (6)
@@ -10283,7 +10318,7 @@ PrefabInstance:
     - target: {fileID: 1753119681773037994, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 708004973}
     - target: {fileID: 3219201572823787416, guid: 9626e00a637ec074cae55d998823282d, type: 3}
       propertyPath: m_Name
       value: Enemy

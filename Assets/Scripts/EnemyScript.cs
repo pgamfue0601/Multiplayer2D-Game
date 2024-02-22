@@ -30,7 +30,7 @@ public class EnemyScript : MonoBehaviour
 
             if (collision.GetComponent<PlayerController>())
             {
-                collision.GetComponent<SinglePlayerController>().rb.velocity = Vector3.zero;
+                collision.GetComponent<PlayerController>().rb.velocity = Vector3.zero;
                 collision.GetComponent<PlayerController>().rb.AddForce(collision.GetComponent<PlayerController>().gameObject.transform.up * 325);
             }
             AudioSource.PlayClipAtPoint(stomp.clip, gameObject.transform.position);

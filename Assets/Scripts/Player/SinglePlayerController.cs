@@ -18,7 +18,6 @@ public class SinglePlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(transform.gameObject);
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         cam = FindObjectOfType<Camera>();
